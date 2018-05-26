@@ -1,0 +1,78 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*the margin and padding is just to neutralize the whole document*/
+  background-image: url("pics/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron-text h1{
+  margin-left: 25%;
+  font-size: 100px;
+  color: rgba(225,225,225,0.1);
+  background-image: url("pics/smoke.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: animate 60s linear infinite;
+  text-align: left;
+  margin-top: 15%;
+  font-weight: 700;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  40% {
+    background-position: left 800px top 10px;
+  }
+}
+
+nav ul {
+  width: 55%;
+  margin: 0 auto;
+}
+
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul li {
+  list-style: none;
+  width: 20%;
+  height: 20px;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400px;
+  color: white;
+
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
+}
