@@ -1,12 +1,13 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background: #2e2e2e;
   margin: 0;
   padding: 0;
   /*the margin and padding is just to neutralize the whole document*/
 }
 
 /*#####
-background for nav and juumbotron
+Jumbotron
 #####*/
 #wrapper {
   width: 100%;
@@ -40,10 +41,10 @@ nav.black {
 
 nav #logo {
   color: #ff8533;
-  padding: 22px 20px;
+  padding: 20px 20px;
   height: 80px;
   float: left;
-  font-size: 24px;
+  font-size: 30px;
   transition: 0.3s;
 }
 
@@ -57,17 +58,42 @@ nav ul {
 }
 
 nav ul li a {
-  line-height: 80px;
+  line-height: 75px;
   text-transform: uppercase;
   color: #fff;
-  padding: 12px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-decoration: none;
   transition: 0.3s;
+  float: left;
 }
 
 nav .black ul li a {
   color: #fff
 }
+
+nav li a:hover {
+  color: #6e6e6e;
+}
+
+/*for the nav bar animation*/
+nav li a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #657082;
+
+  position: absolute;
+  top: 22px;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before  {
+  width: 7%;
+}
+
 
 
 /*Jumbotron heading positioning and animation*/
@@ -97,4 +123,83 @@ nav .black ul li a {
 
 #filler{
   height: 100vh;
+}
+
+/*#####
+about section
+#####*/
+#about {
+  width: 100%;
+}
+
+#about-text {
+  width: 98%;
+}
+
+#about-text h2 {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 70px;
+  color: #ff8533;
+  font-size: 50px;
+}
+
+#about-text p {
+  color: #fff;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/*#####
+skills section
+#####*/
+#skills h3 {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: #ff8533;
+  font-size: 50px;
+}
+#skills h4 {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 25px;
+}
+
+#skill-tree {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#skills-left {
+  color: #999;
+  width: 49%;
+  float: left;
+  font-size: 20px;
+}
+
+#skills-right {
+  color: #999;
+  width: 49%;
+  float: right;
+  font-size: 20px;
+}
+
+.skill-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+#skills::after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 50px;
 }
