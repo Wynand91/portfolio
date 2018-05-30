@@ -30,6 +30,7 @@ nav {
   padding: 10px 100px;
   box-sizing: border-box;
   transition: 0.3s;
+  z-index: 99999;
 }
 
 /*.black class gets added in js*/
@@ -37,6 +38,7 @@ nav.black {
   background: rgba(0,0,0,0.8);
   height: 100px;
   padding: 10px 100px;
+  z-index: 99999;
 }
 
 nav #logo {
@@ -46,6 +48,7 @@ nav #logo {
   float: left;
   font-size: 30px;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 
@@ -139,7 +142,7 @@ about section
 #about-text h2 {
   width: 35%;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 95px;
   color: #ff8533;
   font-size: 50px;
 }
@@ -195,11 +198,111 @@ skills section
   text-align: left;
   padding: 0;
   margin: 0;
+  padding-bottom: 150px;
 }
 
 #skills::after {
   content: "";
   display: table;
   clear: both;
-  padding-bottom: 50px;
+}
+
+/*#####
+Projects section
+#####*/
+
+#project-container h2 {
+  width: 18%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 95px;
+  color: #ff8577;
+  font-size: 50px;
+  z-index= 999;
+}
+
+#project-container {
+  width: 100%;
+  float: left;
+  background-color: #2e2e2e;
+}
+
+.projects {
+  margin: 0 auto;
+  width: 100%;
+  display: inline-block;
+  margin-top: 10vh;
+}
+
+.project-list {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.project-list li {
+  position: relative;
+  max-width: 293px;
+  background-color: #4f4f4f;
+  width: 100%;
+  height: 400px;
+  margin: 50px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.h1, .h2, .h3 {
+  position: absolute;;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 135px;
+  background-color: #8770af;
+  transition-duration: 0.8s;
+}
+
+.h2 {
+  top: 133px;
+  width: 100%;
+  left: 293px;
+  background-color: #6c4ca3;
+  transition-duration: 0.8s;
+}
+
+.h3 {
+  top: 266px;
+  transition-duration: 0.8s;
+}
+
+.project-list li:hover .h1, .project-list li:hover .h3 {
+  width: 100%;
+}
+
+.project-list li:hover .h2 {
+  left: 0;
+}
+
+.project-list li h3 {
+  position: absolute;
+  top: 187px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  z-index: 1;
+  left: -100px;
+  transform: translate(-50%);
+  width: 134px;
+  letter-spacing: 1px;
+  transition-duration: 1.5s;
+}
+
+.project-list li:hover h3 {
+  left: 50%;
+}
+
+img {
+  background-position: center;
+  background-repeat: no-repeat;
 }
