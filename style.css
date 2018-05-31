@@ -42,13 +42,16 @@ nav.black {
 }
 
 nav #logo {
-  color: #ff8533;
   padding: 20px 20px;
   height: 80px;
   float: left;
   font-size: 30px;
   transition: 0.3s;
   z-index: 9999;
+}
+
+nav #logo a {
+  color: #ff8533;
 }
 
 
@@ -250,11 +253,10 @@ Projects section
   margin: 50px;
   float: left;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .h1, .h2, .h3 {
-  position: absolute;;
+  position: absolute;
   top: 0;
   left: 0;
   width: 0%;
@@ -286,12 +288,12 @@ Projects section
 
 .project-list li h3 {
   position: absolute;
-  top: 187px;
+  top: 10px;
   color: #fff;
   text-transform: uppercase;
   font-size: 25px;
   z-index: 1;
-  left: -100px;
+  right: -200px;
   transform: translate(-50%);
   width: 134px;
   letter-spacing: 1px;
@@ -299,10 +301,53 @@ Projects section
 }
 
 .project-list li:hover h3 {
-  left: 50%;
+  right: 10%;
 }
 
 img {
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.projects ul li p {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: -200px;
+  color: #fff;
+  padding: 20px;
+  transition-duration: 2s;
+}
+
+.projects ul li:hover p {
+  left: 15%;
+}
+
+.projects li button {
+  position: absolute;
+  z-index: 1;
+  top: 400px;
+  left: 70px;
+  transition-duration: 0.8s;
+}
+
+.projects li:hover button {
+  top: 320px;
+}
+
+.projects li button:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
