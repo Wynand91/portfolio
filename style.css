@@ -20,7 +20,7 @@ Jumbotron
 /*#####
 Navigation bar
 #####*/
-nav {
+.nav {
   font-family: Quicksand, sans-serif;
   position: fixed;
   top: 0;
@@ -34,15 +34,15 @@ nav {
 }
 
 /*.black class gets added in js*/
-nav.black {
+.nav.black {
   background: rgba(0,0,0,0.8);
   height: 100px;
   padding: 10px 100px;
   z-index: 99999;
 }
 
-nav #logo {
-  padding: 20px 20px;
+.nav #logo {
+  padding: 15px 20px;
   height: 80px;
   float: left;
   font-size: 30px;
@@ -50,12 +50,20 @@ nav #logo {
   z-index: 9999;
 }
 
-nav #logo a {
-  color: #ff8533;
+.nav #logo a {
+  font-size: 30px;
+  color: #333/*#ff8533*/;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  transition: 0.2s;
+}
+
+.nav #logo a:hover {
+  text-shadow: 0 0 20px rgba(255,255,255,0.75);
 }
 
 
-nav ul {
+.nav ul {
   list-style: none;
   float: right;
   margin: 0;
@@ -63,7 +71,7 @@ nav ul {
   display: flex;
 }
 
-nav ul li a {
+.nav ul li a {
   line-height: 75px;
   text-transform: uppercase;
   color: #fff;
@@ -74,21 +82,20 @@ nav ul li a {
   float: left;
 }
 
-nav .black ul li a {
+.nav .black ul li a {
   color: #fff
 }
 
-nav li a:hover {
+.nav li a:hover {
   color: #6e6e6e;
 }
 
 /*for the nav bar animation*/
-nav li a::before {
+.nav li a::before {
   content: "";
   display: block;
   height: 5px;
   background-color: #657082;
-
   position: absolute;
   top: 22px;
   width: 0%;
@@ -96,7 +103,7 @@ nav li a::before {
   transition: all ease-in-out 250ms;
 }
 
-nav li a:hover::before  {
+.nav li a:hover::before  {
   width: 7%;
 }
 
@@ -107,15 +114,16 @@ nav li a:hover::before  {
   margin-left: 10%;
   margin-top: 20%;
   font-size: 105px;
-  color: rgba(225,225,225,0.1);
-  background-image: url("pics/smoky.jpg");
-  background-repeat: repeat-x;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  animation: animate 60s linear infinite;
   text-align: left;
   font-weight: 700;
+  z-index: 999;
+  color: #ff8533;
+/*for the h1 animation*/
+  background: -webkit-linear-gradient(transparent, transparent), url("pics/smoky.jpg") repeat;
+  background: -o-linear-gradient(transparent,transparent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 120s linear infinite;
 }
 
 @keyframes animate {
@@ -219,7 +227,7 @@ Projects section
   position: relative;
   margin: 0 auto;
   padding-top: 95px;
-  color: #ff8577;
+  color: #333;
   font-size: 50px;
   z-index= 999;
 }
@@ -245,6 +253,8 @@ Projects section
 }
 
 .project-list li {
+  border: 3px solid white;
+  border-radius: 10px;
   position: relative;
   max-width: 293px;
   background-color: #4f4f4f;
@@ -253,6 +263,9 @@ Projects section
   margin: 50px;
   float: left;
   overflow: hidden;
+  -webkit-box-shadow: 2px 13px 16px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 13px 16px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 13px 16px -4px rgba(0,0,0,0.75);
 }
 
 .h1, .h2, .h3 {
@@ -350,4 +363,54 @@ button {
 button a {
   text-decoration: none;
   color: white;
+}
+
+/*#####
+contact section
+#####*/
+.contact::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact h1 {
+  color: #ff8533;
+  width: 22%;
+  margin: 0 auto;
+  font-size: 50px;
+  padding-top: 80px;
+}
+
+.contact p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#email {
+  width: 40%;
+  margin: 0 auto;
+  border: 10px groove white;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom:80px;
+}
+
+/*####
+footer
+#####*/
+#hr {
+  border-color: grey;
+}
+
+footer {
+  font-size: 10px;
+  text-align: right;
+  margin: 30px;
+
+}
+
+footer h5 {
+  font-size: 13px;
 }
