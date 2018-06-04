@@ -414,3 +414,194 @@ footer {
 footer h5 {
   font-size: 13px;
 }
+
+/*#####
+Media Queries
+#####*/
+@media screen and (max-width: 1120px) {
+
+  .nav li a::before {
+    content: "";
+    background-color: transparent;
+  }
+
+  .project-list {
+    width: 78%;
+  }
+
+  .contact h1 {
+    width: 30%;
+  }
+
+  #email {
+    width: 52%;
+  }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+  .project-list li {
+    margin: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .nav #logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav ul {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  .nav ul li a {
+    line-height: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-left: 30px;
+    float: left;
+  }
+
+  .nav.black {
+    height: 120px;
+  }
+
+  #skills-left {
+    width: 40%
+    margin-right: 40px;
+  }
+
+  #skills-right {
+    width: 40%;
+  }
+
+  #project-container h2 {
+    width: 25%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 95px;
+    color: #333;
+    font-size: 50px;
+    z-index= 999;
+  }
+
+  .project-list {
+    width: 92%;
+  }
+
+  .project-list li {
+    margin: 25px;
+  }
+
+  .contact h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #email {
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width: 710px) {
+  .nav ul li a {
+    font-size: 10px;
+    margin-left: 40px;
+  }
+
+  #about-text h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-list {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .nav.black {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .nav {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    z-index: 99999;
+  }
+
+  .nav #logo {
+    height: 40px;
+  }
+
+  #burger-nav {
+    width: 100%;
+    height: 40px;
+    background: url("pics/burgermenu.png") no-repeat 97% center;
+    cursor: pointer;
+  }
+
+  .nav ul {
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .nav ul.open {
+    height: auto;
+    transition: 0.3s;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  .nav ul li a {
+    line-height: 75px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    border-bottom: 1px solid #4f4f4f;
+  }
+
+  .nav.black {
+    height: 90px;
+    padding: 0;
+  }
+
+
+  .jumbotron-text h1 {
+    margin-left: 10%;
+    margin-top: 50%;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 700;
+    z-index: 999;
+    color: #ff8533;
+  }
+
+}
