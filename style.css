@@ -135,6 +135,65 @@ Navigation bar
   }
 }
 
+.social {
+  margin-left: 7%;
+}
+
+.social li {
+  margin-left: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.social #fb button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(0,84,166);
+}
+.social #insta button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to bottom right, blue, purple, red, orange);
+}
+.social #twitter button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(29, 161, 242);
+}
+.social #git button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(15, 15, 10);
+}
+
+.social #arrow {
+  color: #4CAF50;
+  position: relative;
+  top: 7px;
+  animation: bouncearrow 1s infinite;
+  visibility: hidden;
+}
+
+@keyframes bouncearrow {
+  0%{
+    right: 0;
+  }
+
+  50%{
+    right: 7px;
+  }
+
+  100%{
+    right: 0;
+  }
+}
+
 #filler{
   height: 100vh;
 }
@@ -151,9 +210,10 @@ about section
 }
 
 #about-text h2 {
-  width: 35%;
-  margin: 0 auto;
-  padding-top: 95px;
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+  margin-top: auto;
   color: #ff8533;
   font-size: 50px;
 }
@@ -173,8 +233,8 @@ about section
 skills section
 #####*/
 #skills h3 {
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
   padding-top: 100px;
   color: #ff8533;
   font-size: 50px;
@@ -206,7 +266,6 @@ skills section
 
 .skill-list {
   list-style: none;
-  text-align: left;
   padding: 0;
   margin: 0;
   padding-bottom: 150px;
@@ -223,13 +282,13 @@ Projects section
 #####*/
 
 #project-container h2 {
-  width: 18%;
-  position: relative;
-  margin: 0 auto;
-  padding-top: 95px;
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
   color: #333;
   font-size: 50px;
   z-index= 999;
+  position: relative;
 }
 
 #project-container {
@@ -352,7 +411,7 @@ img {
   cursor: pointer;
 }
 
-button {
+.projects button {
   background-color: #4CAF50;
   border: none;
   padding: 15px 32px;
@@ -360,7 +419,7 @@ button {
   display: inline-block;
 }
 
-button a {
+.projects button a {
   text-decoration: none;
   color: white;
 }
@@ -383,18 +442,22 @@ contact section
 }
 
 .contact p {
-  color: white;
+  color: #999;
   font-size: 20px;
   text-align: center;
 }
 
 #email {
-  width: 40%;
-  margin: 0 auto;
-  border: 10px groove white;
+  color: #fff;
+  width: 100%;
+  text-align: center;
   font-size: 50px;
   margin-top: 30px;
   margin-bottom:80px;
+}
+
+#toSocialMedia {
+  color: #4CAF50;
 }
 
 /*####
@@ -434,7 +497,8 @@ Media Queries
   }
 
   #email {
-    width: 52%;
+    width: 100%;
+    text-align: center;
   }
 
 }
@@ -487,9 +551,9 @@ Media Queries
   }
 
   #project-container h2 {
-    width: 25%;
+    width: 100%;
+    text-align: center;
     position: relative;
-    margin: 0 auto;
     padding-top: 95px;
     color: #333;
     font-size: 50px;
@@ -509,11 +573,6 @@ Media Queries
     text-align: center;
   }
 
-  #email {
-    width: 100%;
-    text-align: center;
-    border: none;
-  }
 
 }
 
@@ -602,6 +661,56 @@ Media Queries
     font-weight: 700;
     z-index: 999;
     color: #ff8533;
+  }
+
+  #skills h3 {
+    font-size: 30px;
+  }
+
+  .skill-list {
+    font-size: 15px;
+    color: rgb(200,200,200);
+  }
+
+  .projects {
+    margin-top: 40px;
+  }
+
+  .project-list li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact p {
+    color: #999;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #email {
+    color: #fff;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .project-list li:hover h3 {
+    right: 0%;
+  }
+
+  .projects ul li:hover p {
+    left: 10%;
+  }
+
+  .projects li:hover button {
+    top: 320px;
+    right: 200px;
   }
 
 }

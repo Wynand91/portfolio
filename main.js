@@ -29,6 +29,12 @@ $(document).ready(function(){
     if ($(".nav ul").hasClass("open")) {
       $(".nav ul").removeClass("open");
     }
+  });
+
+
+//social media arrow appear/disappear
+  $("#toSocialMedia").on("click", function(){
+    $("#arrow").css("visibility","visible");
   })
 
 });

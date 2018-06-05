@@ -5,6 +5,7 @@
     <title>Wynand Theron - Web Developer || Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width"  />
   </head>
@@ -12,19 +13,28 @@
   <body>
 
     <div id="wrapper"  data-parallax="scroll" data-image-src="pics/jumbotron.jpg" data-z-index=-100>
-      <div class="nav">
-        <div id="logo"><a href="#">W</a></div>
-        <div id="burger-nav"></div>
-        <ul>
-          <li><a href="#about" id="about-me">About Me</a></li>
-          <li><a href="#skills" id="my-skills">My Skills</a></li>
-          <li><a href="#project-container" id="projects">Projects</a></li>
-          <li><a href="#email" id="contact-me">Contact Me</a></li>
-        </ul>
-      </div>
+      <nav>
+        <div class="nav">
+          <div id="logo"><a href="#">W</a></div>
+          <div id="burger-nav"></div>
+          <ul>
+            <li><a href="#about" id="about-me">About Me</a></li>
+            <li><a href="#skills" id="my-skills">My Skills</a></li>
+            <li><a href="#project-container" id="projects">Projects</a></li>
+            <li><a href="#email" id="contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <div class="jumbotron-text">
-        <h1>Hi,<br /> I'm Wynand</h1>
+        <h1 id="hi">Hi,<br /> I'm Wynand</h1>
+        <ul class="social">
+          <li id="fb"><a href="https://www.facebook.com/wynand.theron.3" target="_blank"><button class="fa fa-facebook fa-2x"></button></a></li>
+          <li id="insta"><a href="https://www.instagram.com/theronwynand" target="_blank"><button class="fa fa-instagram fa-2x"></button></a></button></li>
+          <li id="twitter"><a href="https://twitter.com/masterpain91" target="_blank"><button class="fa fa-twitter fa-2x"></button></a></li>
+          <li id="git"><a href="https://github.com/Wynand91" target="_blank"><button class="fa fa-github-alt fa-2x"></button></a></li>
+          <li id="arrow" class="fa fa-arrow-left fa-4x" ></li>
+        </ul>
       </div>
     </div>
 
@@ -33,171 +43,177 @@
             from collapsing-->
     </div>
 
-    <!--About section-->
-    <div id="about"  data-parallax="scroll" data-image-src="pics/road.jpg" data-z-index=-100>
-      <div id="about-text">
-        <h2>Nice to meet you!</h2>
+    <main>
+      <!--About section-->
+      <div id="about"  data-parallax="scroll" data-image-src="pics/road.jpg" data-z-index=-100>
+        <div id="about-text">
+          <h2>Nice to meet you!</h2>
+          <p>
+            My name is Wynand Theron. I am from Cape Town, South Africa and I am a Web developer.<br />
+            <br />
+            After finishing school, I had to make the usual decisions that would affect my whole future. No pressure right? <br /> Long story short, I chose the wrong direction and ended up with a Bachelors of Science degree that left me with a job as a sales assistant in a camping goods store. I was not a Happy guy. <br />
+            <br />
+            Two years passed and I went back to College. This time I did a little more research and I figured that a qualification in marketing would certainly land me a job, and this is where my coding journey began. While I was applying for vacancies, I noticed a well-paying job with a single line in the requirements that would change my life – “knowledge of HTML/CSS beneficial” <br />
+            <br />
+            I knew I would not be able to afford to go back to University, as I still owed A LOT of money for my first degree. So I did what any normal person would do, I googled “Learn HTML free online” and I discovered Codecademy and FreeCodeCamp. I forgot about Biology. I forgot about camping and I forgot about marketing. I fell in love with coding faster than you could say “Hello World”.
+          </p>
+        </div>
+
+        <!--skills section-->
+        <div id="skills">
+          <h3>Skills - What do I know (so far):</h>
+            <div id="skill-tree">
+              <div id="skills-left">
+                <h4>Programming:</h4>
+                <ul class="skill-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>Responsive Web Design</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>Node.js (beginner)</li>
+                  <li>MongoDB (beginner)</li>
+                  <li>React.js (beginner)</li>
+                  </ul>
+              </div>
+              <div id="skills-right">
+                <h4>Other:</h4>
+                <ul class="skill-list">
+                  <li>Git & GitHub</li>
+                  <li>Photoshop(beginner)</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!--Project section-->
+      <div id="project-container" data-parallax="scroll" data-image-src="pics/rain.jpg" data-z-index=0>
+        <h2>Projects:</h2>
+        <div class="projects">
+          <ul class="project-list">
+            <li>
+              <img src="pics/tribute.jpg" alt="tribute page" />
+              <h3>Simple Tribute Page</h3>
+              <p>HTML, Bootstrap, CSS</p>
+              <button><a href="https://codepen.io/WynandT/pen/veXJWq?editors=1100" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/quote.jpg" alt="Qoute generator" />
+              <h3>Quote Generator</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
+              <button><a href="https://codepen.io/WynandT/pen/xXpRBZ" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/wiki.jpg" alt="wikipedia viewer" />
+              <h3>Wikipedia Search</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
+              <button><a href="https://codepen.io/WynandT/pen/BwVZxd" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/twitch.jpg" alt="Twitch dashboard " />
+              <h3>Twitch.tv Dashboard</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
+              <button><a href="https://codepen.io/WynandT/pen/OxwWvb" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/weather.jpg" alt="Local weather app" />
+              <h3>Local Weather App</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
+              <button><a href="https://codepen.io/WynandT/pen/pWLKZa" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/calc.jpg" alt="Desktop calculator" />
+              <h3>Desktop Calculator</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
+              <button><a href="https://codepen.io/WynandT/pen/NwRjgV" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/pomo.jpg" alt="Pomodoro clock" />
+              <h3>Pomodoro Clock</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
+              <button><a href="https://codepen.io/WynandT/pen/POmLpR" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/tictac.jpg" alt="TicTacToe Game" />
+              <h3>TicTacToe Game</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
+              <button><a href="https://codepen.io/WynandT/pen/jazPQj" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/simon.jpg" alt="Simon game" />
+              <h3>Simon Game</h3>
+              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
+              <button><a href="https://codepen.io/WynandT/pen/jZzYLq" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+            <li>
+              <img src="pics/johan.jpg" alt="johans thumbnail" />
+              <h3>Johan's Electrical</h3>
+              <p>Responsive Website<br /> for a Client (Small business)</p>
+              <button><a href="http://www.johanselec.co.za/" target="_blank">View this project</a></button>
+              <span class="h1"></span>
+              <span class="h2"></span>
+              <span class="h3"></span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!--Contact section-->
+      <div class="contact">
+        <h1>Contact me!</h1>
         <p>
-          My name is Wynand Theron. I am from Cape Town, South Africa and I am a Web developer.<br />
-          <br />
-          After finishing school, I had to make the usual decisions that would affect my whole future. No pressure right? <br /> Long story short, I chose the wrong direction and ended up with a Bachelors of Science degree that left me with a job as a sales assistant in a camping goods store. I was not a Happy guy. <br />
-          <br />
-          Two years passed and I went back to College. This time I did a little more research and I figured that a qualification in marketing would certainly land me a job, and this is where my coding journey began. While I was applying for vacancies, I noticed a well-paying job with a single line in the requirements that would change my life – “knowledge of HTML/CSS beneficial” <br />
-          <br />
-          I knew I would not be able to afford to go back to University, as I still owed A LOT of money for my first degree. So I did what any normal person would do, I googled “Learn HTML free online” and I discovered Codecademy and FreeCodeCamp. I forgot about Biology. I forgot about camping and I forgot about marketing. I fell in love with coding faster than you could say “Hello World”.
+          If you have any questions, want to arrange an interview, or are looking for a freelancer<br /> feel free to contact me
+        </p>
+        <p id="email">
+          wtheron2@yahoo.com
+        </p>
+        <p>
+          Or find my Social Media accounts <a href="#hi" id="toSocialMedia">here</a>
         </p>
       </div>
 
-      <!--skills section-->
-      <div id="skills">
-        <h3>Skills - What do I know (so far):</h>
-          <div id="skill-tree">
-            <div id="skills-left">
-              <h4>Programming:</h4>
-              <ul class="skill-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>Responsive Web Design</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Node.js (beginner)</li>
-                <li>MongoDB (beginner)</li>
-                <li>React.js (beginner)</li>
-                </ul>
-            </div>
-            <div id="skills-right">
-              <h4>Other:</h4>
-              <ul class="skill-list">
-                <li>Git & GitHub</li>
-                <li>Photoshop (beginner)</li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </div>
+      <hr id="hr"/>
 
-    <!--Project section-->
-    <div id="project-container" data-parallax="scroll" data-image-src="pics/rain.jpg" data-z-index=0>
-      <h2>Projects:</h2>
-      <div class="projects">
-        <ul class="project-list">
-          <li>
-            <img src="pics/tribute.jpg" alt="tribute page" />
-            <h3>Simple Tribute Page</h3>
-            <p>HTML, Bootstrap, CSS</p>
-            <button><a href="https://codepen.io/WynandT/pen/veXJWq?editors=1100" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/quote.jpg" alt="Qoute generator" />
-            <h3>Quote Generator</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-            <button><a href="https://codepen.io/WynandT/pen/xXpRBZ" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/wiki.jpg" alt="wikipedia viewer" />
-            <h3>Wikipedia Search</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-            <button><a href="https://codepen.io/WynandT/pen/BwVZxd" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/twitch.jpg" alt="Twitch dashboard " />
-            <h3>Twitch.tv Dashboard</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-            <button><a href="https://codepen.io/WynandT/pen/OxwWvb" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/weather.jpg" alt="Local weather app" />
-            <h3>Local Weather App</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-            <button><a href="https://codepen.io/WynandT/pen/pWLKZa" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/calc.jpg" alt="Desktop calculator" />
-            <h3>Desktop Calculator</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-            <button><a href="https://codepen.io/WynandT/pen/NwRjgV" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/pomo.jpg" alt="Pomodoro clock" />
-            <h3>Pomodoro Clock</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-            <button><a href="https://codepen.io/WynandT/pen/POmLpR" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/tictac.jpg" alt="TicTacToe Game" />
-            <h3>TicTacToe Game</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-            <button><a href="https://codepen.io/WynandT/pen/jazPQj" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/simon.jpg" alt="Simon game" />
-            <h3>Simon Game</h3>
-            <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-            <button><a href="https://codepen.io/WynandT/pen/jZzYLq" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-          <li>
-            <img src="pics/johan.jpg" alt="johans thumbnail" />
-            <h3>Johan's Electrical</h3>
-            <p>Responsive Website<br /> for a Client (Small business)</p>
-            <button><a href="http://www.johanselec.co.za/" target="_blank">View this project</a></button>
-            <span class="h1"></span>
-            <span class="h2"></span>
-            <span class="h3"></span>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-
-    <!--Contact section-->
-    <div class="contact">
-      <h1>Contact me!</h1>
-      <p>
-        If you have any questions, want to arrange an interview, or are looking for a freelancer<br /> feel free to contact me
-      </p>
-      <p id="email">
-        wtheron2@yahoo.com
-      </p>
-    </div>
-
-    <hr id="hr"/>
+    </main>
 
     <footer>
       <h5>&copy</h5>
