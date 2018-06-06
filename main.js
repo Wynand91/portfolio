@@ -1,9 +1,6 @@
 /* ******************
 Author: Wynand Theron
-email: wtheron2@yahoo.//
-
-Please note, the reason I use both standard JavaScript and jQuery is just to indicate
-that I am familiar with both.
+email: wtheron2@yahoo.com
 ****************** */
 
 $(document).ready(function(){
@@ -35,6 +32,16 @@ $(document).ready(function(){
 //social media arrow appear/disappear
   $("#toSocialMedia").on("click", function(){
     $("#arrow").css("visibility","visible");
-  })
+
+    setTimeout(function(){
+      $("#arrow").fadeOut(1000,function() {
+        $("#arrow").css("visibility","hidden");
+        $("#arrow").fadeIn(100);
+      });
+    },3000)
+
+  });
+
+
 
 });

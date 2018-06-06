@@ -149,6 +149,7 @@ Navigation bar
   height: 50px;
   width: 50px;
   border-radius: 50px;
+  outline: none;
 }
 
 .social #fb button:hover {
@@ -174,8 +175,8 @@ Navigation bar
 
 .social #arrow {
   color: #4CAF50;
-  position: relative;
   top: 7px;
+  position: relative;
   animation: bouncearrow 1s infinite;
   visibility: hidden;
 }
@@ -496,10 +497,6 @@ Media Queries
     width: 30%;
   }
 
-  #email {
-    width: 100%;
-    text-align: center;
-  }
 
 }
 
@@ -713,4 +710,26 @@ Media Queries
     right: 200px;
   }
 
+}
+
+@media screen and (max-width: 405px) {
+  .social #arrow {
+    margin-top: 20px;
+    margin-left: 100px;
+    transform: rotate(90deg);
+  }
+
+  @keyframes bouncearrow {
+    0%{
+      top: 0;
+    }
+
+    50%{
+      top: 7px;
+    }
+
+    100%{
+      top:0;
+    }
+  }
 }
