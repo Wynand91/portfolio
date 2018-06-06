@@ -659,6 +659,14 @@ Media Queries
     z-index: 999;
     color: #ff8533;
   }
+  
+  #about-text p {
+    font-size: 15px;
+    letter-spacing: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
 
   #skills h3 {
     font-size: 30px;
