@@ -22,6 +22,7 @@
             <li><a href="#skills" id="my-skills">My Skills</a></li>
             <li><a href="#project-container" id="projects">Projects</a></li>
             <li><a href="#email" id="contact-me">Contact Me</a></li>
+            <li><a href="pics/Wynand_Theron_Backend_Developer_CV.pdf" download target="_blank">Download My CV</a></li>
           </ul>
         </div>
       </nav>
@@ -29,10 +30,10 @@
       <div class="jumbotron-text">
         <h1 id="hi">Hi,<br /> I'm Wynand</h1>
         <ul class="social">
+          <li id="linkedin"><a href="https://www.linkedin.com/in/wynandtheron/" target="_blank"><button class="fa fa-linkedin fa-2x"></button></a></li>
+          <li id="git"><a href="https://github.com/Wynand91" target="_blank"><button class="fa fa-github-alt fa-2x"></button></a></li>
           <li id="fb"><a href="https://www.facebook.com/wynand.theron.3" target="_blank"><button class="fa fa-facebook fa-2x"></button></a></li>
           <li id="insta"><a href="https://www.instagram.com/theronwynand" target="_blank"><button class="fa fa-instagram fa-2x"></button></a></button></li>
-          <li id="twitter"><a href="https://twitter.com/masterpain91" target="_blank"><button class="fa fa-twitter fa-2x"></button></a></li>
-          <li id="git"><a href="https://github.com/Wynand91" target="_blank"><button class="fa fa-github-alt fa-2x"></button></a></li>
           <li id="arrow" class="fa fa-arrow-left fa-4x" ></li>
         </ul>
       </div>
@@ -48,164 +49,268 @@
       <div id="about"  data-parallax="scroll" data-image-src="pics/road.jpg" data-z-index=-100>
         <div id="about-text">
           <h2>Nice to meet you!</h2>
+          <p>My name is Wynand Theron, and I’m a software developer based in Cape Town, South Africa.</p>
+
+          <p>After finishing school, I felt the pressure to make a “responsible” choice, so I pursued a Bachelor of Science degree at Stellenbosch University, one of South Africa’s top universities. While I completed the degree, I eventually realized it wasn’t the path I truly wanted to follow — and job prospects in South Africa for that field were limited at the time.</p>
           <p>
-            My name is Wynand Theron. I am from Cape Town, South Africa and I am a Web developer.<br />
-            <br />
-            After finishing school, I had to make the usual decisions that would affect my whole future. No pressure right? <br /> Long story short, I chose the wrong direction and ended up with a Bachelors of Science degree that left me with a job as a sales assistant in a camping goods store. I was not a Happy guy. <br />
-            <br />
-            Two years passed and I went back to College. This time I did a little more research and I figured that a qualification in marketing would certainly land me a job, and this is where my coding journey began. While I was applying for vacancies, I noticed a well-paying job with a single line in the requirements that would change my life – “knowledge of HTML/CSS beneficial” <br />
-            <br />
-            I knew I would not be able to afford to go back to University, as I still owed A LOT of money for my first degree. So I did what any normal person would do, I googled “Learn HTML free online” and I discovered Codecademy and FreeCodeCamp. I forgot about Biology. I forgot about camping and I forgot about marketing. I fell in love with coding faster than you could say “Hello World”.
+            Two years later, I went back to college with a new plan: marketing. While applying for jobs, I noticed one listing that caught my eye — with a specific requirement: “knowledge of HTML/CSS beneficial.” That single requirement changed everything for me.
+            Unable to afford university again due to debt from my first degree, I turned to free online resources like Codecademy and FreeCodeCamp. I dove headfirst into coding, quickly falling in love with the craft and forgetting about my past paths.
           </p>
+
+          <p>Since then, I’ve built over 6 years of experience as a backend developer at a great company called <a href="https://byteorbit.com/" target="_blank" style="color: rgba(229, 18, 68); text-decoration: none;">Byte Orbit</a>, specializing in FinTech. I’ve worked extensively with Python and Django, designing and maintaining secure, scalable APIs, building complex systems like payment processing interfaces, and integrating with cloud services such as AWS S3 and SES. Along the way, I’ve grown comfortable with Docker, REST API design, relational databases, and exploring new technologies like Golang and TypeScript.</p>
+
+          <p>I’m passionate about writing clean, efficient code that solves real problems, and I’m always excited to keep learning and tackling new challenges.</p>
         </div>
 
-        <!--skills section-->
-        <div id="skills">
-          <h3>Skills - What do I know (so far):</h>
-            <div id="skill-tree">
-              <div id="skills-left">
-                <h4>Programming:</h4>
-                <ul class="skill-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>Responsive Web Design</li>
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>Node.js (Learning)</li>
-                  <li>MongoDB (Learning)</li>
-                  <li>React.js (Learning)</li>
-                  </ul>
-              </div>
-              <div id="skills-right">
-                <h4>Other:</h4>
-                <ul class="skill-list">
-                  <li>Git & GitHub</li>
-                  <li>Photoshop(Learning)</li>
-                </ul>
-              </div>
-            </div>
+      <!-- Skills Section -->
+      <div id="skills">
+        <h3>Skills – What do I know (so far):</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Responsive Web Design</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>React.js (learning)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>Backend</h4>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Django Rest Framework</li>
+              <li>REST API design</li>
+              <li>Relational Databases (PostgreSQL)</li>
+              <li>SQL</li>
+              <li>Celery/Huey</li>
+              <li>Redis</li>
+
+            </ul>
+            <h5 style="margin-top: 1rem;">Also familiar with:</h5>
+            <ul>
+              <li>Golang</li>
+              <li>TypeScript</li>
+              <li>NestJS</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>WebSockets</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>DevOps / Tools</h4>
+            <ul>
+              <li>Git & GitHub/GitLab etc</li>
+              <li>GitHub Actions</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+              <li>Apache Kafka</li>
+              <li>AWS services (S3, SES)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h4>Other</h4>
+            <ul>
+              <li>System Design (Learning)</li>
+              <li>OIDC & OAuth2</li>
+            </ul>
+            <h5 style="margin-top: 1rem;">Also familiar with:</h5>
+            <ul>
+              <li>Linux</li>
+              <li>Bash Scripting (.sh files)</li>
+            </ul>
+          </div>
         </div>
       </div>
+
 
       <!--Project section-->
-      <div id="project-container" data-parallax="scroll" data-image-src="pics/rain.jpg" data-z-index=0>
-        <h2>Projects:</h2>
-        <div class="projects">
-          <ul class="project-list">
-            <!--<li>
-              <img src="pics/tribute.jpg" alt="tribute page" />
-              <h3>Simple Tribute Page</h3>
-              <p>HTML, Bootstrap, CSS</p>
-              <button><a href="https://codepen.io/WynandT/pen/veXJWq?editors=1100" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>-->
-            
-            <li>
-              <img src="pics/johan.jpg" alt="johans thumbnail" />
-              <h3>Johan's Electrical</h3>
-              <p>Responsive Website<br /> for a Client (Small business)</p>
-              <button><a href="http://www.johanselec.co.za/" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/quote.jpg" alt="Qoute generator" />
-              <h3>Quote Generator</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-              <button><a href="https://codepen.io/WynandT/pen/xXpRBZ" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/wiki.jpg" alt="wikipedia viewer" />
-              <h3>Wikipedia Search</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-              <button><a href="https://codepen.io/WynandT/pen/BwVZxd" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/twitch.jpg" alt="Twitch dashboard " />
-              <h3>Twitch.tv Dashboard</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-              <button><a href="https://codepen.io/WynandT/pen/OxwWvb" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/weather.jpg" alt="Local weather app" />
-              <h3>Local Weather App</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery, API's</p>
-              <button><a href="https://codepen.io/WynandT/pen/pWLKZa" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/calc.jpg" alt="Desktop calculator" />
-              <h3>Desktop Calculator</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-              <button><a href="https://codepen.io/WynandT/pen/NwRjgV" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/pomo.jpg" alt="Pomodoro clock" />
-              <h3>Pomodoro Clock</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-              <button><a href="https://codepen.io/WynandT/pen/POmLpR" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/tictac.jpg" alt="TicTacToe Game" />
-              <h3>TicTacToe Game</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-              <button><a href="https://codepen.io/WynandT/pen/jazPQj" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <li>
-              <img src="pics/simon.jpg" alt="Simon game" />
-              <h3>Simon Game</h3>
-              <p>HTML, Bootstrap, CSS,<br /> JS, jQuery</p>
-              <button><a href="https://codepen.io/WynandT/pen/jZzYLq" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>
-
-            <!--<li>
-              <img src="pics/johan.jpg" alt="johans thumbnail" />
-              <h3>Johan's Electrical</h3>
-              <p>Responsive Website<br /> for a Client (Small business)</p>
-              <button><a href="http://www.johanselec.co.za/" target="_blank">View project</a></button>
-              <span class="h1"></span>
-              <span class="h2"></span>
-              <span class="h3"></span>
-            </li>-->
-
-          </ul>
+        <div id="project-container" data-parallax="scroll" data-image-src="pics/coding.jpg" data-z-index=0>
+          <h2 class="section-heading">My Projects</h2>
+          <section id="projects-section">
+            <!-- Section 1: My Packages / Tools -->
+            <div class="project-subsection">
+              <h3>Personal Django and DRF projects</h3>
+              <div class="project-grid">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/login_example.png');">
+                      <h4>Fedauth</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Django OIDC package that supports a multi-tenant federated login for Django admin & frontend.</p>
+                      <a href="https://github.com/Wynand91/fedauth" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);">
+                      <h4>TravelSure</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Sample Django/DRF app I built to showcase skills. Includes API's, testing, CI/CD etc.</p>
+                      <a href="https://github.com/Wynand91/travelsure" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2: Real-world projects -->
+            <div class="project-subsection">
+              <h3> High-Impact FinTech Products I Helped Deliver</h3>
+              <p class="side-project-info">A few of the teams I've worked on at <a href="https://byteorbit.com/" target="_blank" style="color: rgba(229, 18, 68); text-decoration: none;">Byte Orbit</a></p>
+              <div class="project-grid">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/shoprite_mma.png');">
+                      <h4>Shoprite MoneyMarket</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Collaborated in a small, high-performing team to build and maintain the backend of this multi-million-user, award-winning digital bank. Led development of the USSD interface.</p>
+                      <a href="https://moneymarketaccount.co.za/" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/shyft.png');">
+                      <h4>Shyft</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Award winning Standard Bank forex app. I was mainly part of maintenance (dependency upgrades etc.), code reviews and investigations.</p>
+                      <a href="https://www.shyft.co.za/" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/feenix.png');">
+                      <h4>Feenix</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Crowdfunding for education app. I was mainly on this for my junior years. API's, code reviews, bugfixes.</p>
+                      <a href="https://feenix.org/" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 3: Old side projects -->
+            <div class="project-subsection">
+              <h3>📦 Old side projects</h3>
+              <p class="side-project-info">Some of these might be missing API keys, but the UI and code is still visible.</p>
+              <div class="project-grid">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/johan.jpg');">
+                      <h4>Johan's Electrical</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Static website built for a client. Unfortunately not live anymore, but feel free to view source code.</p>
+                      <a href="https://github.com/Wynand91/Johan-website" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/simon.jpg');">
+                      <h4>Simon Game</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>HTML, Bootstrap, CSS, JS, jQuery.</p>
+                      <a href="https://codepen.io/WynandT/pen/jZzYLq" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/calc.jpg');">
+                      <h4>Desktop Calculator</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>HTML, Bootstrap, CSS, JS, jQuery.</p>
+                      <a href="https://codepen.io/WynandT/pen/NwRjgV" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/pomo.jpg');">
+                      <h4>Pomodoro Clock</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>HTML, Bootstrap, CSS, JS, jQuery.</p>
+                      <a href="https://codepen.io/WynandT/pen/POmLpR" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/tictac.jpg');">
+                      <h4>TicTacToe Game</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>HTML, Bootstrap, CSS, JS, jQuery.</p>
+                      <a href="https://codepen.io/WynandT/pen/jazPQj" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/quote.jpg');">
+                      <h4>Quote Generator</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Small quote generator app (No API key). HTML, Bootstrap, CSS, JS, jQuery, API's.</p>
+                      <a href="https://codepen.io/WynandT/pen/xXpRBZ" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/wiki.jpg');">
+                      <h4>Wikipedia Search</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Small Wikipedia search interface (No API key). HTML, Bootstrap, CSS, JS, jQuery, API's.</p>
+                      <a href="https://codepen.io/WynandT/pen/BwVZxd" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/twitch.jpg');">
+                      <h4>Twitch.tv Dashboard</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Simple dashboard to see streamer data (No API key). HTML, Bootstrap, CSS, JS, jQuery, API's.</p>
+                      <a href="https://codepen.io/WynandT/pen/OxwWvb" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('pics/weather.jpg');">
+                      <h4>Weather App</h4>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Simple weather dashboard (No API key) based on location. HTML, Bootstrap, CSS, JS, jQuery, API's.</p>
+                      <a href="https://codepen.io/WynandT/pen/pWLKZa" target="_blank" class="project-button">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
 
       <!--Contact section-->
       <div class="contact">
