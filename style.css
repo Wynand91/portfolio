@@ -83,7 +83,7 @@ Navigation bar
 }
 
 .nav-right a:hover {
-  color: #00bfff;
+  color: #c28840;
 }
 
 /* Burger menu icon */
@@ -213,7 +213,8 @@ about section
 }
 
 #about-text {
-  width: 98%;
+  width: 65%;
+  margin: 0 auto;
 }
 
 #about-text h2 {
