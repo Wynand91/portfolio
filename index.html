@@ -13,17 +13,23 @@
   <body>
 
     <div id="wrapper"  data-parallax="scroll" data-image-src="pics/jumbotron.jpg" data-z-index=-100>
-      <nav>
-        <div class="nav">
-          <div id="logo"><a href="#">W</a></div>
-          <div id="burger-nav"></div>
-          <ul>
-            <li><a href="#about" id="about-me">About Me</a></li>
-            <li><a href="#skills" id="my-skills">My Skills</a></li>
-            <li><a href="#project-container" id="projects">Projects</a></li>
-            <li><a href="#email" id="contact-me">Contact Me</a></li>
-            <li><a href="docs/Wynand_Theron_Backend_Developer_CV.pdf" target="_blank" rel="noopener noreferrer">Download My CV</a></li>
-          </ul>
+      <nav class="nav">
+        <div class="nav-left">
+          <span class="logo">W</span>
+        </div>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-right" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#project-container">Projects</a>
+          <a href="#email">Contact</a>
+          <a href="docs/Wynand_Theron_Backend_Developer_CV.pdf" target="_blank" rel="noopener noreferrer"> Download My CV</a>
         </div>
       </nav>
 
@@ -33,7 +39,7 @@
           <li id="linkedin"><a href="https://www.linkedin.com/in/wynandtheron/" target="_blank"><button class="fa fa-linkedin fa-2x"></button></a></li>
           <li id="git"><a href="https://github.com/Wynand91" target="_blank"><button class="fa fa-github-alt fa-2x"></button></a></li>
           <li id="fb"><a href="https://www.facebook.com/wynand.theron.3" target="_blank"><button class="fa fa-facebook fa-2x"></button></a></li>
-          <li id="insta"><a href="https://www.instagram.com/theronwynand" target="_blank"><button class="fa fa-instagram fa-2x"></button></a></button></li>
+          <li id="insta"><a href="https://www.instagram.com/theron_w_" target="_blank"><button class="fa fa-instagram fa-2x"></button></a></button></li>
           <li id="arrow" class="fa fa-arrow-left fa-4x" ></li>
         </ul>
       </div>
@@ -49,16 +55,15 @@
       <div id="about"  data-parallax="scroll" data-image-src="pics/road.jpg" data-z-index=-100>
         <div id="about-text">
           <h2>Nice to meet you!</h2>
-          <p>My name is Wynand Theron, and I’m a software developer based in Cape Town, South Africa.</p>
-
-          <p>After finishing school, I felt the pressure to make a “responsible” choice, so I pursued a Bachelor of Science degree at Stellenbosch University, one of South Africa’s top universities. While I completed the degree, I eventually realized it wasn’t the path I truly wanted to follow — and job prospects in South Africa for that field were limited at the time.</p>
           <p>
-            Two years later, I went back to college with a new plan: marketing. While applying for jobs, I noticed one listing that caught my eye — with a specific requirement: “knowledge of HTML/CSS beneficial.” That single requirement changed everything for me.
-            Unable to afford university again due to debt from my first degree, I turned to free online resources like Codecademy and FreeCodeCamp. I dove headfirst into coding, quickly falling in love with the craft and forgetting about my past paths.
+            <strong>Hi, I’m Wynand Theron</strong> — a <span id="age"></span> year old backend developer based in Cape Town, South Africa.
           </p>
-
-          <p>Since then, I’ve built over 6 years of experience as a backend developer at a great company called <a href="https://byteorbit.com/" target="_blank" style="color: rgba(229, 18, 68); text-decoration: none;">Byte Orbit</a>, specializing in FinTech. I’ve worked extensively with Python and Django, designing and maintaining secure, scalable APIs, building complex systems like payment processing interfaces, and integrating with cloud services such as AWS S3 and SES. Along the way, I’ve grown comfortable with Docker, REST API design, relational databases, and exploring new technologies like Golang and TypeScript.</p>
-
+          <p>
+            I’ve spent over 6 years building scalable, secure systems in the FinTech space, at a company called <a href="https://byteorbit.com/" target="_blank" style="color: rgba(229, 18, 68); text-decoration: none;">Byte Orbit</a>, primarily using Python and Django. I worked on everything from payment gateways to cloud-based integrations (AWS S3, SES), and built REST APIs that power real-world financial tools.
+          </p>
+          <p>
+            My path into software wasn’t traditional. After a BSc degree and a brief foray into marketing, a job ad sparked my curiosity with one line: <em>“HTML/CSS knowledge beneficial.”</em> That led me to free online courses like Codecademy and FreeCodeCamp — and soon, to a deep love of coding.
+          </p>
           <p>I’m passionate about writing clean, efficient code that solves real problems, and I’m always excited to keep learning and tackling new challenges.</p>
         </div>
 
@@ -92,9 +97,9 @@
               <li>Redis</li>
 
             </ul>
-            <h5 style="margin-top: 1rem;">Also familiar with:</h5>
+            <h5 style="margin: 1rem 0 0.5rem;">Also familiar with:</h5>
             <ul>
-              <li>Golang</li>
+              <li style>Golang</li>
               <li>TypeScript</li>
               <li>NestJS</li>
               <li>Node.js</li>
@@ -121,7 +126,7 @@
               <li>System Design (Learning)</li>
               <li>OIDC & OAuth2</li>
             </ul>
-            <h5 style="margin-top: 1rem;">Also familiar with:</h5>
+            <h5 style="margin: 1rem 0 0.5rem;">Also familiar with:</h5>
             <ul>
               <li>Linux</li>
               <li>Bash Scripting (.sh files)</li>
@@ -132,7 +137,7 @@
 
 
       <!--Project section-->
-        <div id="project-container" data-parallax="scroll" data-image-src="pics/coding.jpg" data-z-index=0>
+        <div id="project-container" data-parallax="scroll" data-image-src="pics/road.jpg" data-z-index=0>
           <h2 class="section-heading">My Projects</h2>
           <section id="projects-section">
             <!-- Section 1: My Packages / Tools -->
@@ -205,7 +210,7 @@
             </div>
             <!-- Section 3: Old side projects -->
             <div class="project-subsection">
-              <h3>📦 Old side projects</h3>
+              <h3>Old side projects</h3>
               <p class="side-project-info">Some of these might be missing API keys (for security), but the UI and code is still visible.</p>
               <div class="project-grid">
                 <div class="flip-card">
@@ -319,7 +324,7 @@
           If you have any questions, want to arrange an interview, or are looking for a freelancer<br /> feel free to contact me
         </p>
         <p id="email">
-          wtheron2@yahoo.com
+          <a href="mailto:wtheron2@gmail.com" style="color: white; text-decoration: underline;">wtheron2@gmail.com</a>
         </p>
         <p>
           Or find my Social Media accounts <a href="#hi" id="toSocialMedia">here</a>
