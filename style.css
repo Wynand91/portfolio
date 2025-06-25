@@ -401,6 +401,7 @@ Projects section
 
 .flip-card:hover .flip-card-inner {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
   transform: rotateY(180deg);
 }
 
